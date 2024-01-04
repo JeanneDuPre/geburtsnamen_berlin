@@ -12,5 +12,5 @@
 <body>
     <header>
         <h1>Geburtsstatistiken</h1>
-        <p>Hier finden Sie die Geburtsstatistiken aus Amerika.</p>
+        <p>Hier finden Sie die Geburtsstatistiken aus Berlin.</p>
     </header>
