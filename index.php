@@ -6,7 +6,7 @@ include 'inc/functions.php';
 
 $firstLetters = [];
 foreach($names AS $nameArray){
-    $nameFirstLetter = $nameArray['vorname'][2];
+    $nameFirstLetter = $nameArray['vorname'][0];
 
     if(empty($firstLetters[$nameFirstLetter])) {
         $firstLetters[$nameFirstLetter] = true;
