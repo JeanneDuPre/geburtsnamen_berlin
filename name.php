@@ -22,8 +22,8 @@ foreach($names AS $nameArray) {
         $chartYears = [];
         $chartCounts = [];
         foreach($namesFiltered AS $nameArray) {
-            $chartYears[] = $nameArray['year'];
-            $chartCounts[] = $nameArray['count'];
+            $chartYears[] = $nameArray['jahr'];
+            $chartCounts[] = $nameArray['anzahl'];
         }
     ?>
     <?php /*
@@ -73,8 +73,8 @@ foreach($names AS $nameArray) {
         <tbody>
             <?php foreach($namesFiltered AS $nameArray): ?>
                 <tr>
-                    <td><?php echo $nameArray['year']; ?></td>
-                    <td><?php echo $nameArray['count']; ?></td>
+                    <td><?php echo $nameArray['Jahr']; ?></td>
+                    <td><?php echo $nameArray['Anzahl']; ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>

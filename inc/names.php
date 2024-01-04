@@ -2,16 +2,16 @@
 
 $names = [];
 
-$file = fopen(__DIR__ . DIRECTORY_SEPARATOR . 'names.filtered.csv', 'r');
+$file = fopen(__DIR__ . DIRECTORY_SEPARATOR . 'geburtsnamen_berlin_filtered.csv', 'r');
 
 while (($line = fgetcsv($file))) {
 
     // Skip first line (Header of CSV file)
-    if ($line[0] === 'Name') continue;
+    if ($line[0] === 'vorname') continue;
 
     $names[] = [
-        'name' => $line[0],
-        'year' => intval($line[1], 10),
-        'count' => intval($line[2], 10)
+        'vorname' => $line[0],
+        'jahr' => intval($line[1], 10),
+        'anzahl' => intval($line[3], 10)
     ];
 }

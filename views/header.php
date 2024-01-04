@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" type="text/css" href="./styles/simple.css">
     <link rel="stylesheet" type="text/css" href="./styles/custom.css">
-    <title>PHP-Kurs</title>
+    <title>Geburtsnamen in Berlin</title>
 </head>
 <body>
     <header>

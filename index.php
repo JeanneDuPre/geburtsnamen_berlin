@@ -6,7 +6,7 @@ include 'inc/functions.php';
 
 $firstLetters = [];
 foreach($names AS $nameArray){
-    $nameFirstLetter = $nameArray['name'][0];
+    $nameFirstLetter = $nameArray['vorname'][0];
 
     if(empty($firstLetters[$nameFirstLetter])) {
         $firstLetters[$nameFirstLetter] = true;
@@ -31,7 +31,7 @@ foreach($names AS $nameArray){
         $char = $_GET['char'][0];
         $filteredNames = [];
         foreach($names AS $nameArray) {
-            $currentName = $nameArray['name'];
+            $currentName = $nameArray['vorname'];
             if ($currentName[0] !== $char) {
                 continue;
             }
