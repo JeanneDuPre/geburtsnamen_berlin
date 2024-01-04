@@ -10,8 +10,8 @@ while (($line = fgetcsv($file))) {
     if ($line[0] === 'vorname') continue;
 
     $names[] = [
-        'vorname' => $line[0],
-        'jahr' => intval($line[1], 10),
-        'anzahl' => intval($line[3], 10)
+        'vorname' => $line[2],
+        'jahr' => intval($line[3], 10),
+        'anzahl' => intval($line[4], 10)
     ];
 }

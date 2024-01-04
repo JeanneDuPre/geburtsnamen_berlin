@@ -7,7 +7,7 @@ $currentName = $_GET['name'];
 
 $namesFiltered = [];
 foreach($names AS $nameArray) {
-    if ($nameArray['name'] !== $currentName) {
+    if ($nameArray['vorname'] !== $currentName) {
         continue;
     }
     $namesFiltered[]= $nameArray;
@@ -73,8 +73,8 @@ foreach($names AS $nameArray) {
         <tbody>
             <?php foreach($namesFiltered AS $nameArray): ?>
                 <tr>
-                    <td><?php echo $nameArray['Jahr']; ?></td>
-                    <td><?php echo $nameArray['Anzahl']; ?></td>
+                    <td><?php echo $nameArray['jahr']; ?></td>
+                    <td><?php echo $nameArray['anzahl']; ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
