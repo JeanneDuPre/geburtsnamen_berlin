@@ -3,7 +3,7 @@ include 'views/header.php';
 include 'inc/names.php';
 include 'inc/functions.php';
 
-$currentName = $_GET['name'];
+$currentName = $_GET['vorname'];
 
 $namesFiltered = [];
 foreach($names AS $nameArray) {
@@ -26,11 +26,6 @@ foreach($names AS $nameArray) {
             $chartCounts[] = $nameArray['anzahl'];
         }
     ?>
-    <?php /*
-    <pre><?php print_r($chartYears); ?></pre>
-    <pre><?php print_r($chartCounts); ?></pre>
-    */ ?>
-
 
     <script type="text/javascript" src="scripts/chart.js"></script>
     <div>

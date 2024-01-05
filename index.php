@@ -6,7 +6,7 @@ include 'inc/functions.php';
 
 $firstLetters = [];
 foreach($names AS $nameArray){
-    $nameFirstLetter = $nameArray['vorname'][0];
+    $nameFirstLetter = $nameArray['vorname'][1];
 
     if(empty($firstLetters[$nameFirstLetter])) {
         $firstLetters[$nameFirstLetter] = true;
@@ -45,7 +45,7 @@ foreach($names AS $nameArray){
     <ul>
         <?php foreach($filteredNames AS $currentName => $_): ?>
             <li>
-                <a href="name.php?<?php echo http_build_query(['name' => $currentName]); ?>">
+                <a href="name.php?<?php echo http_build_query(['vorname' => $currentName]); ?>">
                 <?php echo e($currentName); ?>
                 </a>
             </li>

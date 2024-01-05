@@ -11,6 +11,6 @@
 </head>
 <body>
     <header>
-        <h1>Geburtsstatistiken</h1>
-        <p>Hier finden Sie die Geburtsstatistiken aus Berlin.</p>
+        <h1>Geburtsnamenstatistik</h1>
+        <p>Hier finden Sie die Geburtsnamenstatistik von 2012 bis 2022 aus Berlin.</p>
     </header>
